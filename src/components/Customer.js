@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
-import '.Customer.css';
+import CustomerStyles from './Customer.css';
 
 const Customer = (props) => {
     return (
