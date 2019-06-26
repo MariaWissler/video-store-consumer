@@ -3,19 +3,27 @@
 }
 
 .App-logo {
+  align-items: left;
   /* animation: App-logo-spin infinite 20s linear; */
   height: 80px;
 }
 
 .App-header {
-  background-color: #222;
+  display: flex; 
+  background-color: white;
   height: 150px;
   padding: 20px;
-  color: white;
+  color: rgb(15, 32, 185);
 }
 
 .App-title {
-  font-size: 1.5em;
+  align-items: center;
+  font-family: 'Aclonica';
+  vertical-align: middle;
+  text-align: center;
+  font-size: 3em;
+  height: 80px;
+  width: 85%;
 }
 
 .App-intro {
@@ -26,3 +34,10 @@
   from { transform: rotate(0deg); }
   to { transform: rotate(360deg); }
 }
+
+.Navbar {
+  background-color: aqua;
+  display: flex;
+  justify-content: space-between;
+}
+
