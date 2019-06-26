@@ -4,9 +4,17 @@ import logo from './logo.svg';
 import './App.css';
 import Navbar from './Navbar';
 import Customer from './components/Customer.js';
+import CustomerList from './components/CustomerList.js';
 import Search from './components/Search';
 import Library from './components/Library.js';
 // import { BrowserRouter as Router, Link} from 'react-router-dom';
+
+const customerData = () => (
+  <div>
+    <CustomerList/>
+  </div>
+);
+
 
 
 class App extends Component {
@@ -26,7 +34,7 @@ class App extends Component {
               <li><Link to="/search">Search</Link></li>
             </ul>
             <Route path="/" exact component={Library}/>
-            <Route path="/customers" component={Customer}/>
+            <Route path="/customers" component={customerData}/>
             <Route path="/search" component={Search}/>
           </div>
         </div>
