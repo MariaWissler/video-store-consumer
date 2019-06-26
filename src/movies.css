@@ -1,5 +1,5 @@
-.card {
-    background-color: #F4FF81;
+.movie {
+    background-color: pink;
   
     padding: 1em 0;
     margin: 0.5rem;
@@ -15,7 +15,7 @@
     align-items: center;
   }
   
-  .card__content {
+  .movie__content {
     grid-column-start: 2;
   
     display: flex;
@@ -27,21 +27,19 @@
     overflow: hidden;
   }
   
-  .card__content-text {
+  .movie__content-title {
     text-overflow: ellipsis;
     overflow: hidden;
   }
   
-  .card__content-emoji {
-    font-size: 3rem;
+  .movie__content-overview {
+    font-size: 1.5rem;
+    padding: 0;
+    margin: 0;
   }
-  
-  .card__content-text, .card__content-emoji {
+
+  .movie__content-release_date, .movie_content-image_url {
     padding: 0;
     margin: 0;
   }
   
-  .card__delete {
-    align-self: start;
-    font-family: 'Permanent Marker', Helvetica, sans-serif;
-  }
