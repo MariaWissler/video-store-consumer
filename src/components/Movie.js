@@ -1,7 +1,7 @@
 import React, {Component} from 'react';
 import PropTypes from 'prop-types';
 
-import './Movie.css';
+import './movie.css';
 
 
 const Movie = (props) => {
@@ -19,12 +19,12 @@ return (
 }
     
 Movie.propTypes = {
-    id:PropTypes.integer,
+    id:PropTypes.number,
     title:PropTypes.string,
     overview:PropTypes.string,
     release_date:PropTypes.string,
     image_url:PropTypes.string,
-    external_id:PropTypes.integer
+    external_id:PropTypes.number,
   };
   
   export default Movie;
