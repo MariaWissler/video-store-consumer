@@ -1,10 +1,13 @@
 import React, { Component } from 'react';
+import { Route, Link } from 'react-router-dom';
 import logo from './logo.svg';
 import './App.css';
-import Navbar from './Navbar'
+import Navbar from './Navbar';
+import Customer from './components/Customer.js';
+import Search from './components/Search';
 import Library from './components/Library.js';
+// import { BrowserRouter as Router, Link} from 'react-router-dom';
 
-// import AppRouter from './Components/AppRouter';
 
 class App extends Component {
   render() {
@@ -15,9 +18,18 @@ class App extends Component {
       <h1 className="App-title">Rilakkuma's Video Store</h1>
        </header>
        <Navbar />
-      <div className="App"></div>
-      <Library/>
-      </div>
+      
+          <div>
+            <ul>
+              <li><Link to="/">Movie Library</Link></li>
+              <li><Link to="/customers">Customers</Link></li>
+              <li><Link to="/search">Search</Link></li>
+            </ul>
+            <Route path="/" exact component={Library}/>
+            <Route path="/customers" component={Customer}/>
+            <Route path="/search" component={Search}/>
+          </div>
+        </div>
     );
   }
 }
