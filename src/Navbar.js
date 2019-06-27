@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
+import SearchForm from './SearchForm';
 
 class Navbar extends Component {
     render() {
@@ -16,10 +17,7 @@ class Navbar extends Component {
                         <Link to="/" className="nav-link btn btn-outline-primary">rental library</Link>
                     </div>
                     <div className="nav-item">
-                        <form className="form-inline my-2 my-lg-0">
-                            <input className="form-control mr-sm-2" type="search" placeholder="enter movie title" aria-label="Search"></input>
-                            <button className="btn btn-outline-success my-2 my-sm-0" type="submit">search</button>
-                        </form>
+                        <SearchForm />
                     </div>
                     <div className="nav-item">
                         <div>current customer: {this.props.customer}</div>

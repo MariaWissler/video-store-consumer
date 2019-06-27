@@ -20,15 +20,15 @@ class Library extends Component {
        this.getMovies() 
     }
 
-    getCustomers = () => {
-      axios.get('http://localhost:3000/')
-      .then((response) => {
-       this.setState({ customers: response.data });
-        })
-        .catch((error) => {
-          this.setState({ error: error.message });
-        });
-      }
+    // getCustomers = () => {
+    //   axios.get('http://localhost:3000/')
+    //   .then((response) => {
+    //    this.setState({ customers: response.data });
+    //     })
+    //     .catch((error) => {
+    //       this.setState({ error: error.message });
+    //     });
+    //   }
 
     getMovies = () => {
       axios.get('http://localhost:3000/')
@@ -42,19 +42,19 @@ class Library extends Component {
 
 
       render() {
-        const allCustomers = this.state.customers.map((customer) => {
-          return <Customer
-            key={customer.id}
-            id={customer.id}
-            name={customer.name}
-            address={customer.address}
-            city={customer.city}
-            state={customer.state}
-            postal_code={customer.postal_code}
-            phone={customer.phone}
-            account_credit={customer.account_credit}
-            created_at={customer.created_at}/> 
-        });
+        // const allCustomers = this.state.customers.map((customer) => {
+        //   return <Customer
+        //     key={customer.id}
+        //     id={customer.id}
+        //     name={customer.name}
+        //     address={customer.address}
+        //     city={customer.city}
+        //     state={customer.state}
+        //     postal_code={customer.postal_code}
+        //     phone={customer.phone}
+        //     account_credit={customer.account_credit}
+        //     created_at={customer.created_at}/> 
+        // });
 
         const allMovies = this.state.movies.map((movie) => {
           return <Movie
@@ -71,10 +71,10 @@ class Library extends Component {
           <div >
             <div className="library">
               {allMovies}
-            </div>
-            <div className="customers">
+             </div>
+            {/* <div className="customers">
               {allCustomers}
-            </div>
+            </div> */}
           </div>
         )
       }
