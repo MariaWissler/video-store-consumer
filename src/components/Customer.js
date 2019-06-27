@@ -9,7 +9,7 @@ const Customer = (props) => {
                 <div className="customer__content-name">{props.name}</div>
                 <div className="customer__content-created_at">{props.created_at}</div>
                 <div className="customer__content-address">{props.address}</div>
-                <div className="customer__content-pohone">{props.phone}</div>
+                <div className="customer__content-phone">{props.phone}</div>
                 <div className="customer__content-account_credit">{props.account_credit}</div>
             </span>
 

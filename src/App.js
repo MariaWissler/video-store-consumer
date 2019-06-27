@@ -28,11 +28,6 @@ class App extends Component {
        <Navbar />
       
           <div>
-            <ul>
-              <li><Link to="/">Movie Library</Link></li>
-              <li><Link to="/customers">Customers</Link></li>
-              <li><Link to="/search">Search</Link></li>
-            </ul>
             <Route path="/" exact component={Library}/>
             <Route path="/customers" component={customerData}/>
             <Route path="/search" component={Search}/>
