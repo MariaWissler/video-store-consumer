@@ -14,8 +14,8 @@ return (
           <div className="movie__content-release_date">{props.release_date}</div>
           <div className="movie__content-image_url"><img src={props.image_url} alt="new"/></div>
         </span>
-        <button>
-          className="select__movie">
+        <button 
+        className="select__movie">
           Select 
         </button>
       </div>
